@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    max-width: 100%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.text {
+  
+    font-family: "Roboto Slab", serif;
+    position: absolute;
+
+    font-size: 7vw;
+    color: rgb(139, 121, 6);
+    letter-spacing: 6px;
+    opacity: 0;
+    animation: fadeIn 7s forwards;
+    transform: translate(-50%, -50%);
+top :50%;
+left: 50%;;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+span {
+    font-family: "Roboto Slab", serif;
+    color: rgba(131, 9, 9, 0.949);
+    font-size: 13vw;
+    font-weight: 400;
+}
+
+.banner img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: kenburns 15s ease-in;
+}
+
+@keyframes kenburns {
+    0% {
+        transform: translate(-50%, -50%) translateY(-20%) scale(1.2);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(0%) scale(1);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(20%) scale(1.2);
+    }
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
